@@ -51,6 +51,15 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .text-2 {
+    font-size: 1.8rem;
+  }
+  .text-1 {
+    font-size: 2.4rem;
+  }
+}
+
 /* HEADER */
 
 .header {
@@ -105,9 +114,13 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 0;
-    background: #fff;
+    background: #ffffffef;
+    z-index: 9999;
   }
 
   .menu {
@@ -194,7 +207,8 @@ body {
 
 @media (max-width: 768px) {
   .hero {
-    margin-top: 0;
+    margin-top: 120px;
+    padding: 3% 3%;
   }
   .hero__text h1 {
     font-size: 2.8rem;
@@ -214,10 +228,6 @@ body {
 
   .grid h2 {
     margin-bottom: 20px;
-    font-size: 2.5rem;
-  }
-
-  .text-1 {
     font-size: 2.5rem;
   }
 }
@@ -375,7 +385,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 6) 100%);
 }
 
 .banner__text {
@@ -385,8 +395,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  .banner {
+    margin-top: 112px;
+  }
   .banner__text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -411,6 +424,27 @@ body {
 }
 
 /* CARD */
+
+/* CTA */
+
+.cta {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/cta.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  padding: 10%;
+}
+
+.cta__text {
+  text-align: center;
+  max-width: 1000px;
+  z-index: 100;
+}
 
 /* FOOTER */
 
