@@ -4,10 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>contact</title>
+	<title>Contatti</title>
 
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<script defer src="js/custom.js"></script>
+
+
+
 
 </head>
 
@@ -17,7 +21,8 @@
 
 	<header class="header">
 
-		<img class="logo" src="./img/miologo.png" alt="">
+		<img class="logo" src="./img/miologo.png" alt="davide mancini web design" title="logo mancini davide"
+			width="150" height="auto">
 
 		<nav class="menu">
 			<ul>
@@ -55,47 +60,34 @@
 
 	<!-- CONTACT FORM -->
 
-	<!-- MEDIA TEXT -->
-
-	<div class="grid reverse spacer-t">
-		<div class="col-50">
-			<img class="img-res" src="/img/media-text.png" alt="">
+	<form class="contact-form spacer-b">
+		<h3 class="text-center m-2">Compila il form per metterti in contatto com me</h3>
+		<div class="form-group m-2">
+			<label for="name">Nome</label>
+			<input type="text" id="name" placeholder="inserisci nome..." required>
 		</div>
-		<div class="col-50 pt-2 pl-2">
-			<h2 class="text-1">Lorem ipsum dolor sit amet.</h2>
-			<p class="m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe praesentium earum
-				quis corporis
-				eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe praesentium earum quis
-				corporis
-				eos?</p>
+		<div class="form-group m-2">
+			<label for="email">Email</label>
+			<input type="text" id="email" placeholder="inserisci email..." required>
 		</div>
-	</div>
-
-	<!-- MEDIA TEXT -->
-
-
-	<!-- MEDIA TEXT -->
-
-	<div class="grid spacer-t">
-		<div class="col-50 pt-2">
-			<h2 class="text-1">Lorem ipsum dolor sit amet.</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe praesentium earum quis corporis
-				eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe praesentium earum quis
-				corporis
-				eos?</p>
+		<div class="form-group m-2">
+			<label for="object">Oggetto</label>
+			<input type="text" id="object" placeholder="inserisci oggetto..." required>
 		</div>
-		<div class="col-50">
-			<img class="img-res" src="/img/media-text.png" alt="">
+		<div class="form-group m-2">
+			<label for="message">Messaggio</label>
+			<textarea type="text" id="message" placeholder="messaggio..." required></textarea>
 		</div>
-	</div>
-
-	<!-- MEDIA TEXT -->
+		<div class="form-group m-2">
+			<button id="button-form" class="button" type="submit">invia</button>
+		</div>
+	</form>
 
 
 
 	<!-- FOOTER -->
 
-	<div class="footer text-center">
+	<div class="footer text-center spacer-t">
 		<div class="grid">
 			<div class="col-25">
 				<img class="logo" src="./img/miologo.png" alt="">
