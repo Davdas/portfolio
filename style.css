@@ -144,7 +144,7 @@ body {
     height: auto;
   }
 
-  .header .button {
+  .header.button {
     position: absolute;
     top: 36px;
     right: 75px;
@@ -236,7 +236,7 @@ body {
 
 .grid {
   display: flex;
-  padding: 3% 10%;
+  padding: 5% 10%;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -454,4 +454,8 @@ body {
 
 .footer .logo {
   margin-bottom: -20px;
+}
+
+.footer ul {
+  padding: 0;
 }
