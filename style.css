@@ -400,6 +400,14 @@ body {
   .banner__text p {
     font-size: 1.2rem;
   }
+
+  .banner__text h3 {
+    font-size: 1.2rem;
+  }
+
+  .banner__text ul {
+    padding: 0;
+  }
 }
 
 /* COVER BANNER */
@@ -491,7 +499,7 @@ textarea {
 @media (max-width: 768px) {
   .contact-form {
     width: 90%;
-    height: 90vh;
+    height: 100vh;
   }
 
   .contact-form label {
@@ -515,4 +523,12 @@ textarea {
 
 .footer ul {
   padding: 0;
+}
+
+.footer li {
+  color: #1a1a1a;
+}
+
+.social-icon img {
+  transform: translateY(5px);
 }
