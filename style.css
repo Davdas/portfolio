@@ -506,6 +506,7 @@ textarea {
 
 .footer {
   background: #fff;
+  overflow-y: auto;
 }
 
 .footer .logo {
