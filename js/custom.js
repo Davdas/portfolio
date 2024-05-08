@@ -54,7 +54,9 @@ window.addEventListener("scroll", function () {
 
   if (window.scrollY > 100) {
     header.style.backgroundColor = "#f5dfd0";
+    document.body.classList.add("scroll-down");
   } else {
     header.style.backgroundColor = "#f8e7dc";
+    document.body.classList.remove("scroll-down");
   }
 });
